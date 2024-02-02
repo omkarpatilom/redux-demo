@@ -1,38 +1,64 @@
-.App {
+/* styles.css */
+
+.Container {
   text-align: center;
+  margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 28px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quantity {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.quantity_minus,
+.quantity_plus {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.quantity_input {
+  width: 40px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+/* Hover effect for +/- buttons */
+.quantity_minus:hover,
+.quantity_plus:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h4 {
+    font-size: 14px;
   }
 }
